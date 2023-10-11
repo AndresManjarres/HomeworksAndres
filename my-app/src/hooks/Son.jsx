@@ -4,7 +4,7 @@ export const Son = memo(({ numero, increment}) => {
   console.log('again reloades...');
 
   return(
-    <button onClick= {() => {increment(numero)}}>
+    <button onClick= {() => {increment(numero)}} className="botones">
       {numero}
     </button>
     )
