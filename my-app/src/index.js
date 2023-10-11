@@ -8,7 +8,7 @@ import FirstApp from './components/FirstApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <FirstApp/>
+    <FirstApp value ={0}/>
   </React.StrictMode>
 );
 

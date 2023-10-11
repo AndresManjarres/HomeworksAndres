@@ -1,12 +1,31 @@
 import React from 'react'
+// Para manejar estados
+import {useState} from "react"
 
-function FirstApp() {
-    return (
-        <div>
-            <h1>Enfocado en React</h1>
-            <span>10</span>
-        </div>
-    )
+const FirstApp = ({value}) => {
+  const [counter, setcounter] = useState(value)
+
+  const handleAdd = () => {
+      setcounter(counter + 1 )
+  }
+
+  const handleSubsstract = () => {
+      setcounter(counter - 1 )
+  }
+
+  const handleReset = () => {
+      setcounter(value )
+  }
+
+  return(
+      <>
+      <h1>Contador</h1>
+      <span>{counter}</span>
+      <button onClick={() => handleAdd()} className="botones">+1</button> 
+      <button onClick={() => handleSubsstract()} className="botones">-1</button> 
+      <button onClick={() => handleReset()} className="botones">Reset</button>
+      </>
+  )
 }
 
 export default FirstApp
