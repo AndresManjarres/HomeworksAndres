@@ -5,12 +5,13 @@ import './index.css';
 //import FirstApp from './components/Category';
 //import { Category } from './components/Category';
 //import { GiftGridExpertApp } from './components/gifExpertApp/GifExpertApp';
-import { Father } from './components/Render';
+//import { Father } from './components/Render';
+import { TodoApp } from './components/todoApp/TodoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Father/>
+    <TodoApp/>
   </React.StrictMode>
 );
 
